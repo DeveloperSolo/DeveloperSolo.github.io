@@ -3,21 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="./main.js"></script>
     <title>Solomon Tan - Portfolio</title>
 </head>
 <body>
 
 <header>
     <p>Solomon's Portfolio</p>
-    <nav>
-        <a class="header-navbar-link" href="#intro-banner">Home</a>
-        <a class="header-navbar-link" href="#about-me">About Me</a>
-        <!-- <a class="header-navbar-button">
-            <div class="navbar-dropdown-button-bar1"></div>
-            <div class="navbar-dropdown-button-bar2"></div>
-            <div class="navbar-dropdown-button-bar3"></div>
-        </a> -->
+
+    <button class="navbar-dropdown-button" onclick="OnNavbarButtonClicked()">
+        <div class="navbar-dropdown-button-bar1"></div>
+        <div class="navbar-dropdown-button-bar2"></div>
+        <div class="navbar-dropdown-button-bar3"></div>
+    </button>
+
+    <nav class="navbar-full" >
+        <a href="#intro-banner">Home</a>
+        <a href="#about-me">About Me</a>
     </nav>
+
 </header>
 
 <article>
