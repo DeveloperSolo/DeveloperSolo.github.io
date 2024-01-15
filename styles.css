@@ -91,7 +91,7 @@ header nav a:active {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .navbar-full {
         display: inline-block;
     }
@@ -100,7 +100,7 @@ header nav a:active {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .navbar-full {
         display: none;
     }
