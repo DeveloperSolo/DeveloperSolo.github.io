@@ -115,6 +115,7 @@ header nav a:active {
 
 #intro-banner {
     background-image: url(assets/images/intro_background.png);
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: relative;
@@ -152,35 +153,41 @@ header nav a:active {
 
 #about-me {
     width: 100%;
-    padding: 0% 25%;
+    padding: 0% 20%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 #about-me p {
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    float: none;
+    overflow: hidden;
+    padding-left: 24px;
 }
 
-#profile-pic-container {
+#about-me .profile-pic-container {
     width: 200px;
+    float: left;
     border-radius: 50%;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-#profile-image {
+#about-me .profile-image {
     width: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+
     #about-me {
-        padding: 0% 10%
+        padding: 0% 10%;
     }
+
+    #about-me .profile-pic-container {
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 /* ---- About Me END ---- */
