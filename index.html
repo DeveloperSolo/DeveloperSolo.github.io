@@ -20,6 +20,7 @@
     <nav class="navbar-full" >
         <a href="#intro-banner">Home</a>
         <a href="#about-me">About Me</a>
+        <a href="#experiences">Experience</a>
     </nav>
 
 </header>
@@ -45,6 +46,41 @@
         <br><br>I was also fortunate enough to work at Daylight Studios, where I had the opportunity to work directly on two commercial titles, "Holy Potatoes! What the Hell?!" and "Holy Potatoes! A Spy Story?!". Being my first real step into the games industry, it was definitely an eye opening experience, and helped me cover some gaps that my academic teachings couldn't, like managing a more long-term development cycle, and how to balance and polish games with longer play times.
         <br><br>Currently a student at DigiPen, I am grateful to have met and worked with similarly passionate individuals that have brought me to new heights of game development. Requiring us to develop our own custom game engine, I often take on a more multifaceted role and also work concurrently on gameplay. This also allows me to working closely from the start with not only the other programmers, but with the designers and artists as well.
         <br><br>I aim to continue working in the games industry and bring my game design and development skills to new heights!</p>
+    </section>
+
+    <section id="experiences">
+        <h1>My Experiences</h1>
+        <p class="experience-hint">Click the experiences below to find out more</p>
+        <div class="timeline-filter">
+            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Show All</button>
+            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Projects</button>
+            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Companies</button>
+            <!-- <button class="timeline-filter-button" onclick="FilterOnClick(this)">Industry</button>
+            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Academic</button> -->
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-circle"></div>
+
+            <template id="timeline-element-template">
+                <div class="timeline-container">
+                    <div class="timeline-content">
+
+                        <div class="timeline-content-info">
+                            <p class="timeline-date">Aug 2023 - now</p>
+                            <h2 class="timeline-title">Ubisoft Singapore</h2>
+                            <p class="timeline-subtitle">UI Gameplay Programmer</p>
+                        </div>
+
+                        <img src="assets/images/timeline-icons/Ubisoft_Singapore_Icon.jpg">
+                        <!-- <a href="project-page.html"></a> -->
+                    </div>
+                </div>
+            </template>
+
+            <div class="timeline-circle"></div>
+
+        </div>
     </section>
 
 </article>

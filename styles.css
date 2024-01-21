@@ -192,6 +192,333 @@ header nav a:active {
 
 /* ---- About Me END ---- */
 
+/* ---- Experiences START ---- */
+
+:root {
+    --timeline-position: 50%;
+    --timeline-node-height: 150px;
+    --timeline-color: rgb(231, 231, 231);
+    --timeline-content-padding: 20px;
+
+    --connector-length-company: 50px;
+    --connector-thickness-company: 15px;
+    --timeline-color-company: #717171;
+    --circle-size-company: 39px;
+
+    --connector-length-project: 32px;
+    --connector-thickness-project: 10px;
+    --timeline-color-project: #B6B6B6;
+    --circle-size-project: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --timeline-position: 15%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --timeline-node-height: 100px;
+    }
+}
+
+#experiences {
+    /* background-image: url(assets/images/experiences_background.jpg);
+    background-size: cover; */
+    background-color: #242424;
+    overflow: hidden;
+}
+
+#experiences h1 {
+    color: var(--timeline-color);
+    margin-bottom: 0;
+}
+
+.experience-hint {
+    text-align: center;
+    color: var(--timeline-color);
+    margin-top: 4px;
+    margin-bottom: 32px;
+}
+
+.timeline-filter {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #adadad;
+    border-radius: 12px;
+}
+
+.timeline-filter-button {
+    /* background-color: #c5c5c5; */
+    padding: 12px;
+}
+
+.timeline-filter-button:hover {
+    background-color: #bbbbbb;
+}
+
+.timeline-filter-button-active {
+    background-color: grey !important;
+}
+
+.timeline-circle {
+    content: '';
+    width: 35px;
+    height: 35px;
+    margin-left: calc(var(--timeline-position) - (35px / 2));
+    margin-right: auto;
+    background-color: var(--timeline-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline {
+    position: relative;
+    margin: 12px auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    background-color: var(--timeline-color);
+    top: 6px;
+    bottom: 6px;
+    left: var(--timeline-position);
+    margin-left: -6px;
+}
+
+.timeline-container {
+    position: relative;
+    width: fit-content;
+    background-color: inherit;
+    padding: 10px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.timeline-company {
+    padding-left: var(--connector-length-company);
+    padding-right: var(--connector-length-company);
+}
+
+.timeline-project {
+    padding-left: var(--connector-length-project);
+    padding-right: var(--connector-length-project);
+}
+
+.timeline-hidden {
+    display: none;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    /* width: 25px;
+    height: 25px; */
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-color: var(--timeline-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-company::after {
+    width: var(--circle-size-company);
+    height: var(--circle-size-company);
+    background-color: var(--timeline-color-company);
+}
+
+.timeline-project::after {
+    width: var(--circle-size-project);
+    height: var(--circle-size-project);
+    background-color: var(--timeline-color-project);
+}
+
+.timeline-left {
+    padding-left: 0;
+    left: 50%;
+    transform: translate(-100%, 0);
+}
+
+.timeline-right {
+    padding-right: 0;
+    left: var(--timeline-position);
+}
+
+.timeline-right::after {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-container::before {
+    content: '';
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+    background-color: var(--timeline-color);
+}
+
+.timeline-company::before {
+    width: calc(var(--connector-length-company) + var(--timeline-content-padding));
+    height: var(--connector-thickness-company);
+    background-color: var(--timeline-color-company);
+}
+
+.timeline-project::before {
+    width: calc(var(--connector-length-project) + var(--timeline-content-padding));
+    height: var(--connector-thickness-project);
+    background-color: var(--timeline-color-project);
+}
+
+.timeline-right::before {
+    left: 0;
+}
+
+.timeline-left::before {
+    right: 0;
+}
+
+.timeline-content {
+    height: var(--timeline-node-height);
+    padding: var(--timeline-content-padding);
+    position: relative;
+    background-color: transparent;
+    border-radius: 6px;
+    transition-duration: 0.2s;
+}
+
+.timeline-content:hover {
+    background-color: #393939;
+}
+
+.timeline-content-info .timeline-title {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    max-width: 250px;
+}
+
+.timeline-content-info .timeline-date {
+    margin: 0;
+    color: #727272;
+    font-size: 16px;
+    max-width: 250px;
+}
+
+.timeline-content-info .timeline-subtitle {
+    margin: 0;
+    color: #BCBCBC;
+    font-size: 20px;
+    max-width: 250px;
+}
+
+.timeline-left .timeline-content-info {
+    float: left;
+    padding-right: 10px;
+}
+
+.timeline-left .timeline-content-info h2 {
+    text-align: right;
+}
+
+.timeline-left .timeline-content-info p {
+    text-align: right;
+}
+
+.timeline-right .timeline-content-info {
+    float: right;
+    padding-left: 10px;
+}
+
+.timeline-right .timeline-content-info h2 {
+    text-align: left;
+}
+
+.timeline-right .timeline-content-info p {
+    text-align: left;
+}
+
+.timeline-content img {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.timeline-content a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+    /* .timeline::before {
+        left: 20%;
+    }
+    
+    .timeline-circle {
+        margin-left: 20%;
+        transform: translate(-50%, 0);
+    }
+
+    .timeline-right {
+        left: 20%;
+    }
+
+    .timeline-left {
+
+        padding-left: 0;
+        padding-right: 0;
+        left: 20%;
+        transform: translate(0, 0);
+
+        padding-right: 0;
+        left: 50%;
+    }
+
+    .timeline-left::before {
+        left: 0;
+    }
+
+    .timeline-left .timeline-content-info {
+        float: right;
+        padding-left: 10px;
+    }
+    
+    .timeline-left .timeline-content-info h2 {
+        text-align: left;
+    }
+    
+    .timeline-left .timeline-content-info p {
+        text-align: left;
+    } */
+}
+
+/* ---- Experiences END ---- */
+
+/* ---- Project Page START ---- */
+
+#page-content {
+    padding-top: 50;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* ---- Project Page END ---- */
+
 /* ---- Awards START ---- */
 
 #awards-grid {
@@ -238,6 +565,12 @@ h3 {
 p {
     font-size: 16px;
     text-align: justify;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
 }
 
 /* ---- General Formatting END ---- */

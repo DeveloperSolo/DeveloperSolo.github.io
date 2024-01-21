@@ -1,0 +1,100 @@
+{
+    "skull-and-bones":
+    {
+        "type": [ "project" ],
+        "title": "Skull & Bones",
+        "subtitle": "UI Gameplay Programmer",
+        "date": "Aug 2023 - Now",
+        "imagePath": "assets/images/timeline-icons/SkullBones_Icon.jpg",
+        "content":
+        [
+            {
+                "title": "Introduction",
+                "text": "this is more stuff about the game"
+            },
+            {
+                "title": "Roles & Responsibilities",
+                "text": 
+                [
+                    "My Roles & Responsibilites are these:",
+                    [
+                        "Item 1",
+                        "Item 2",
+                        "Item 3"
+                    ],
+                    "This has allowed me to learn"
+                ]
+            },
+            {
+                "title": "Achievements",
+                "text":
+                [
+                    {
+                        "title": "Before",
+                        "text": "this is more stuff about the game"
+                    },
+                    {
+                        "title": "After",
+                        "text": 
+                        {
+                            "title": "More",
+                            "text": 
+                            {
+                                "title": "More",
+                                "text": "this is more stuff about the game"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "ubisoft-singapore":
+    {
+        "type": [ "company" ],
+        "title": "Ubisoft Singapore",
+        "subtitle": "UI Gameplay Programmer",
+        "date": "Aug 2023 - Now",
+        "imagePath": "assets/images/timeline-icons/Ubisoft_Singapore_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "spy-story":
+    {
+        "type": [ "project" ],
+        "title": "Holy Potatoes! A Spy Story?!",
+        "subtitle": "UI Gameplay Programmer",
+        "date": "Aug 2023 - Now",
+        "imagePath": "assets/images/timeline-icons/DaylightStudios_SpyStory_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "what-the-hell":
+    {
+        "type": [ "project" ],
+        "title": "Holy Potatoes! We're In Hell?!",
+        "subtitle": "UI Gameplay Programmer",
+        "date": "Aug 2023 - Now",
+        "imagePath": "assets/images/timeline-icons/DaylightStudios_SpyStory_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "daylight-studios":
+    {
+        "type": [ "company" ],
+        "title": "Daylight Studios",
+        "subtitle": "UI Gameplay Programmer",
+        "date": "Aug 2023 - Now",
+        "imagePath": "assets/images/timeline-icons/DaylightStudios_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    }
+}
