@@ -3,57 +3,19 @@
     {
         "type": [ "project" ],
         "title": "Skull & Bones",
-        "subtitle": "UI Gameplay Programmer",
+        "subtitle": "UI & Input",
         "date": "Aug 2023 - Now",
         "imagePath": "assets/images/timeline-icons/SkullBones_Icon.jpg",
         "content":
         [
-            {
-                "title": "Introduction",
-                "text": "this is more stuff about the game"
-            },
-            {
-                "title": "Roles & Responsibilities",
-                "text": 
-                [
-                    "My Roles & Responsibilites are these:",
-                    [
-                        "Item 1",
-                        "Item 2",
-                        "Item 3"
-                    ],
-                    "This has allowed me to learn"
-                ]
-            },
-            {
-                "title": "Achievements",
-                "text":
-                [
-                    {
-                        "title": "Before",
-                        "text": "this is more stuff about the game"
-                    },
-                    {
-                        "title": "After",
-                        "text": 
-                        {
-                            "title": "More",
-                            "text": 
-                            {
-                                "title": "More",
-                                "text": "this is more stuff about the game"
-                            }
-                        }
-                    }
-                ]
-            }
+            
         ]
     },
     "ubisoft-singapore":
     {
         "type": [ "company" ],
         "title": "Ubisoft Singapore",
-        "subtitle": "UI Gameplay Programmer",
+        "subtitle": "UI Gameplay Programming Intern",
         "date": "Aug 2023 - Now",
         "imagePath": "assets/images/timeline-icons/Ubisoft_Singapore_Icon.jpg",
         "content":
@@ -61,37 +23,133 @@
             
         ]
     },
-    "spy-story":
+    "minute":
     {
         "type": [ "project" ],
-        "title": "Holy Potatoes! A Spy Story?!",
-        "subtitle": "UI Gameplay Programmer",
-        "date": "Aug 2023 - Now",
-        "imagePath": "assets/images/timeline-icons/DaylightStudios_SpyStory_Icon.jpg",
+        "title": "Minute",
+        "subtitle": "Scripting & Gameplay",
+        "date": "May 2022 - Aug 2023",
+        "imagePath": "assets/images/timeline-icons/Minute_Icon.jpg",
         "content":
         [
             
         ]
     },
-    "what-the-hell":
+    "aesir":
     {
         "type": [ "project" ],
-        "title": "Holy Potatoes! We're In Hell?!",
-        "subtitle": "UI Gameplay Programmer",
-        "date": "Aug 2023 - Now",
-        "imagePath": "assets/images/timeline-icons/DaylightStudios_SpyStory_Icon.jpg",
+        "title": "Aesir",
+        "subtitle": "Scripting & Gameplay",
+        "date": "May 2021 - Apr 2022",
+        "imagePath": "assets/images/timeline-icons/Aesir_Icon.jpg",
         "content":
         [
             
         ]
     },
-    "daylight-studios":
+    "into-arcadia":
+    {
+        "type": [ "project" ],
+        "title": "Into Arcadia",
+        "subtitle": "Project Manager",
+        "date": "Jan 2021 - Apr 2021",
+        "imagePath": "assets/images/timeline-icons/Digipen_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "elov-x":
+    {
+        "type": [ "project" ],
+        "title": "ELOV X",
+        "subtitle": "Project Manager",
+        "date": "Sept 2020 - Dec 2020",
+        "imagePath": "assets/images/timeline-icons/Digipen_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "digipen":
+    {
+        "type": [ "school" ],
+        "title": "DigiPen Singapore",
+        "subtitle": "BSCS in Interactive Media & Game Development",
+        "date": "Sept 2020 - Apr 2024",
+        "imagePath": "assets/images/timeline-icons/Digipen_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "daylight-studios-fulltime":
     {
         "type": [ "company" ],
         "title": "Daylight Studios",
-        "subtitle": "UI Gameplay Programmer",
-        "date": "Aug 2023 - Now",
+        "subtitle": "Programmer, UI & Gameplay",
+        "date": "Feb 2018 - July 2018",
         "imagePath": "assets/images/timeline-icons/DaylightStudios_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "holy-potatoes-a-spy-story":
+    {
+        "type": [ "project" ],
+        "title": "Holy Potatoes! A Spy Story?!",
+        "subtitle": "UI & Gameplay",
+        "date": "Jan 2018 - July 2018",
+        "imagePath": "assets/images/timeline-icons/DaylightStudios_SpyStory_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "holy-potatoes-what-the-hell":
+    {
+        "type": [ "project" ],
+        "title": "Holy Potatoes! What the Hell?!",
+        "subtitle": "UI & Gameplay",
+        "date": "July 2017 - Oct 2017",
+        "imagePath": "assets/images/timeline-icons/DaylightStudios_WhatTheHell_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "daylight-studios-intern":
+    {
+        "type": [ "company" ],
+        "title": "Daylight Studios",
+        "subtitle": "Programming Intern, UI & Gameplay",
+        "date": "July 2017 - Feb 2018",
+        "imagePath": "assets/images/timeline-icons/DaylightStudios_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "daylight-studios-qa":
+    {
+        "type": [ "company" ],
+        "title": "Daylight Studios",
+        "subtitle": "Game Testing Intern",
+        "date": "Mar 2017 - Apr 2017",
+        "imagePath": "assets/images/timeline-icons/DaylightStudios_Icon.jpg",
+        "content":
+        [
+            
+        ]
+    },
+    "temasek-polytechnic":
+    {
+        "type": [ "school" ],
+        "title": "Temasek Polytechnic",
+        "subtitle": "Diploma in Game Design & Development",
+        "date": "Apr 2015 - Apr 2018",
+        "imagePath": "assets/images/timeline-icons/TemasekPolytechnic_Icon.jpg",
         "content":
         [
             

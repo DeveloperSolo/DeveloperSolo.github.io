@@ -31,6 +31,7 @@ const filterBitField =
 [
     "project",
     "company",
+    "school",
     // "industry",
     // "academic",
 ];
