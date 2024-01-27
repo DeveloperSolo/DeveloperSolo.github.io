@@ -32,8 +32,6 @@ const filterBitField =
     "project",
     "company",
     "school",
-    // "industry",
-    // "academic",
 ];
 var useAlternateAlignment = true;
 
@@ -223,6 +221,10 @@ function PopulateAwards()
 window.onload = function()
 {
     PopulateExperiences();
+    if(window.innerWidth < 1000)
+    {
+        SetUseExperienceAlignment(false);
+    }
     UpdateFilterButtonDisplay();
 };
 

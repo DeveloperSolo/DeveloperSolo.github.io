@@ -1,7 +1,7 @@
 {
     "skull-and-bones":
     {
-        "type": [ "project" ],
+        "type": [ "project", "industry" ],
         "title": "Skull & Bones",
         "subtitle": "UI & Input",
         "date": "Aug 2023 - Now",
@@ -25,7 +25,7 @@
     },
     "minute":
     {
-        "type": [ "project" ],
+        "type": [ "project", "academic" ],
         "title": "Minute",
         "subtitle": "Scripting & Gameplay",
         "date": "May 2022 - Aug 2023",
@@ -37,7 +37,7 @@
     },
     "aesir":
     {
-        "type": [ "project" ],
+        "type": [ "project", "academic" ],
         "title": "Aesir",
         "subtitle": "Scripting & Gameplay",
         "date": "May 2021 - Apr 2022",
@@ -49,11 +49,11 @@
     },
     "into-arcadia":
     {
-        "type": [ "project" ],
+        "type": [ "project", "academic" ],
         "title": "Into Arcadia",
         "subtitle": "Project Manager",
         "date": "Jan 2021 - Apr 2021",
-        "imagePath": "assets/images/timeline-icons/Digipen_Icon.jpg",
+        "imagePath": "assets/images/timeline-icons/IntoArcadia_Icon.jpg",
         "content":
         [
             
@@ -61,11 +61,11 @@
     },
     "elov-x":
     {
-        "type": [ "project" ],
+        "type": [ "project", "academic" ],
         "title": "ELOV X",
         "subtitle": "Project Manager",
         "date": "Sept 2020 - Dec 2020",
-        "imagePath": "assets/images/timeline-icons/Digipen_Icon.jpg",
+        "imagePath": "assets/images/timeline-icons/elovx_Icon.jpg",
         "content":
         [
             
@@ -74,7 +74,7 @@
     "digipen":
     {
         "type": [ "school" ],
-        "title": "DigiPen Singapore",
+        "title": "DigiPen SG / SIT",
         "subtitle": "BSCS in Interactive Media & Game Development",
         "date": "Sept 2020 - Apr 2024",
         "imagePath": "assets/images/timeline-icons/Digipen_Icon.jpg",
@@ -97,7 +97,7 @@
     },
     "holy-potatoes-a-spy-story":
     {
-        "type": [ "project" ],
+        "type": [ "project", "industry" ],
         "title": "Holy Potatoes! A Spy Story?!",
         "subtitle": "UI & Gameplay",
         "date": "Jan 2018 - July 2018",
@@ -109,7 +109,7 @@
     },
     "holy-potatoes-what-the-hell":
     {
-        "type": [ "project" ],
+        "type": [ "project", "industry" ],
         "title": "Holy Potatoes! What the Hell?!",
         "subtitle": "UI & Gameplay",
         "date": "July 2017 - Oct 2017",

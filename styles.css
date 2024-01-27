@@ -134,6 +134,7 @@ header nav a:active {
     position: absolute;
     bottom: 50%;
     right: 5%;
+    margin: 0;
 }
 
 #intro-banner p {
@@ -143,6 +144,7 @@ header nav a:active {
     position: absolute;
     top: 50%;
     right: 5%;
+    margin: 0;
 }
 
 /* ---- Intro Banner END ---- */
@@ -194,12 +196,15 @@ header nav a:active {
 
 :root {
     --timeline-position: 50%;
-    --timeline-node-height: 150px;
+    --timeline-node-height: min(20vw, 150px);
+    --timeline-node-text-size-title: min(4.5vw, 32px);
+    --timeline-node-text-size-subtitle: min(2.8125vw , 20px);
+    --timeline-node-text-size-date: min(2.25vw, 16px);
     --timeline-color: rgb(231, 231, 231);
     --timeline-content-padding: 20px;
 
     --connector-length-company: 50px;
-    --connector-thickness-company: 15px;
+    --connector-thickness-company: min(2vw, 15px);
     --timeline-color-company: #717171;
     --circle-size-company: 39px;
 
@@ -211,13 +216,13 @@ header nav a:active {
 
 @media screen and (max-width: 1000px) {
     :root {
-        --timeline-position: 15%;
+        --timeline-position: 25%;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
     :root {
-        --timeline-node-height: 100px;
+        --timeline-position: 10%;
     }
 }
 
@@ -251,7 +256,6 @@ header nav a:active {
 }
 
 .timeline-filter-button {
-    /* background-color: #c5c5c5; */
     padding: 12px;
 }
 
@@ -298,6 +302,7 @@ header nav a:active {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    scale: var(--timeline-node-scale);
 }
 
 .timeline-company, .timeline-school {
@@ -392,6 +397,7 @@ header nav a:active {
     background-color: transparent;
     border-radius: 6px;
     transition-duration: 0.2s;
+    transition-property: background-color;
 }
 
 .timeline-content:hover {
@@ -401,21 +407,21 @@ header nav a:active {
 .timeline-content-info .timeline-title {
     margin: 0;
     color: white;
-    font-size: 32px;
+    font-size: var(--timeline-node-text-size-title);
     max-width: 250px;
 }
 
 .timeline-content-info .timeline-date {
     margin: 0;
     color: #727272;
-    font-size: 16px;
+    font-size: var(--timeline-node-text-size-date);
     max-width: 250px;
 }
 
 .timeline-content-info .timeline-subtitle {
     margin: 0;
     color: #BCBCBC;
-    font-size: 20px;
+    font-size: var(--timeline-node-text-size-subtitle);
     max-width: 250px;
 }
 
