@@ -196,12 +196,14 @@ header nav a:active {
 
 :root {
     --timeline-position: 50%;
-    --timeline-node-height: min(20vw, 150px);
-    --timeline-node-text-size-title: min(4.5vw, 32px);
-    --timeline-node-text-size-subtitle: min(2.8125vw , 20px);
-    --timeline-node-text-size-date: min(2.25vw, 16px);
     --timeline-color: rgb(231, 231, 231);
     --timeline-content-padding: 20px;
+
+    --timeline-node-height: min(25vw, 150px);
+    --timeline-node-width-max: min(42vw, 250px);
+    --timeline-node-text-size-title: min(5.5vw, 32px);
+    --timeline-node-text-size-subtitle: min(3.4375vw , 20px);
+    --timeline-node-text-size-date: min(2.75vw, 16px);
 
     --connector-length-company: 50px;
     --connector-thickness-company: min(2vw, 15px);
@@ -223,6 +225,9 @@ header nav a:active {
 @media screen and (max-width: 750px) {
     :root {
         --timeline-position: 10%;
+
+        --connector-length-company: 20px;
+        --connector-length-project: 12px;
     }
 }
 
@@ -408,21 +413,27 @@ header nav a:active {
     margin: 0;
     color: white;
     font-size: var(--timeline-node-text-size-title);
-    max-width: 250px;
+    width: fit-content;
+    min-width: 0;
+    max-width: var(--timeline-node-width-max);
 }
 
 .timeline-content-info .timeline-date {
     margin: 0;
     color: #727272;
     font-size: var(--timeline-node-text-size-date);
-    max-width: 250px;
+    width: fit-content;
+    min-width: 0;
+    max-width: var(--timeline-node-width-max);
 }
 
 .timeline-content-info .timeline-subtitle {
     margin: 0;
     color: #BCBCBC;
     font-size: var(--timeline-node-text-size-subtitle);
-    max-width: 250px;
+    width: fit-content;
+    min-width: 0;
+    max-width: var(--timeline-node-width-max);
 }
 
 .timeline-left .timeline-content-info {
