@@ -413,8 +413,6 @@ header nav a:active {
     margin: 0;
     color: white;
     font-size: var(--timeline-node-text-size-title);
-    width: fit-content;
-    min-width: 0;
     max-width: var(--timeline-node-width-max);
 }
 
@@ -422,8 +420,6 @@ header nav a:active {
     margin: 0;
     color: #727272;
     font-size: var(--timeline-node-text-size-date);
-    width: fit-content;
-    min-width: 0;
     max-width: var(--timeline-node-width-max);
 }
 
@@ -431,8 +427,6 @@ header nav a:active {
     margin: 0;
     color: #BCBCBC;
     font-size: var(--timeline-node-text-size-subtitle);
-    width: fit-content;
-    min-width: 0;
     max-width: var(--timeline-node-width-max);
 }
 
