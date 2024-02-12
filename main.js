@@ -33,6 +33,12 @@ const filterBitField =
     "company",
     "school",
 ];
+const filterDisplayName = 
+[
+    "Projects",
+    "Companies",
+    "Schools",
+];
 var useAlternateAlignment = true;
 
 function UpdateExperiences()
@@ -125,7 +131,7 @@ function PopulateExperiences()
                 instance.querySelector(".timeline-subtitle").textContent = subtitle;
                 instance.querySelector(".timeline-date").textContent = date;
                 instance.querySelector("img").setAttribute("src", imagePath);
-                // instance.querySelector("a").setAttribute("href", "project-page.html?id=" + key);
+                // instance.querySelector("a").setAttribute("href", "project.html?id=" + key);
 
                 grid.insertBefore(instance, grid.childNodes[grid.childNodes.length - 2]);
                 ++index;
@@ -163,6 +169,30 @@ function UpdateFilterButtonDisplay()
     }
 }
 
+function PopulateFilterButtonDisplay()
+{
+    var grid = document.querySelector("#experiences .timeline-filter");
+    var template = document.querySelector("#experiences #timeline-filter-button-template");
+
+    // Show All
+    var instance = template.content.cloneNode(true);
+    instance.querySelector("button").innerHTML = "Show All";
+    grid.appendChild(instance);
+
+    for(var i = 0; i < filterDisplayName.length; ++i)
+    {
+        var filter = filterDisplayName[i];
+
+        var instance = template.content.cloneNode(true);
+        instance.querySelector("button").innerHTML = filter;
+
+        grid.appendChild(instance);
+    }
+    template.remove();
+
+    UpdateFilterButtonDisplay();
+}
+
 function FilterOnClick(button)
 {
     var buttonIndex = Array.from(button.parentElement.children).indexOf(button);
@@ -180,42 +210,6 @@ function FilterOnClick(button)
 
 //#endregion Experiences
 
-//#region Awards
-
-class Award
-{
-    constructor(title, text)
-    {
-        this.title = title;
-        this.text = text;
-    }
-}
-
-const awards =
-[
-    new Award("Provost's List"),
-    new Award("Director's List"),
-    new Award("WorldSkills Bronze"),
-    new Award("Skills Mastery Award"),
-]
-
-function PopulateAwards()
-{
-    var grid = document.querySelector("#awards-grid");
-    var template = grid.querySelector("#awards-grid-item-template");
-
-    awards.forEach(award =>
-    {
-        var instance = template.content.cloneNode(true);
-
-        instance.querySelector(".award-name").textContent = award.title;
-        
-        grid.appendChild(instance);
-    });
-}
-
-//#endregion Awards
-
 //#region Main
 
 window.onload = function()
@@ -225,7 +219,7 @@ window.onload = function()
     {
         SetUseExperienceAlignment(false);
     }
-    UpdateFilterButtonDisplay();
+    PopulateFilterButtonDisplay();
 };
 
 window.onclick = function(event)

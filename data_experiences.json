@@ -64,7 +64,7 @@
         "type": [ "project", "academic" ],
         "title": "ELOV X",
         "subtitle": "Project Manager",
-        "date": "Sept 2020 - Dec 2020",
+        "date": "Sep 2020 - Dec 2020",
         "imagePath": "assets/images/timeline-icons/ElovX_Icon.jpg",
         "content":
         [
@@ -76,20 +76,8 @@
         "type": [ "school" ],
         "title": "DigiPen SG / SIT",
         "subtitle": "BSCS in Interactive Media & Game Development",
-        "date": "Sept 2020 - Apr 2024",
+        "date": "Sep 2020 - Apr 2024",
         "imagePath": "assets/images/timeline-icons/Digipen_Icon.jpg",
-        "content":
-        [
-            
-        ]
-    },
-    "daylight-studios-fulltime":
-    {
-        "type": [ "company" ],
-        "title": "Daylight Studios",
-        "subtitle": "Programmer, UI & Gameplay",
-        "date": "Feb 2018 - July 2018",
-        "imagePath": "assets/images/timeline-icons/DaylightStudios_Icon.jpg",
         "content":
         [
             
@@ -100,7 +88,7 @@
         "type": [ "project", "industry" ],
         "title": "Holy Potatoes! A Spy Story?!",
         "subtitle": "UI & Gameplay",
-        "date": "Jan 2018 - July 2018",
+        "date": "Jan 2018 - Jul 2018",
         "imagePath": "assets/images/timeline-icons/DaylightStudios_SpyStory_Icon.jpg",
         "content":
         [
@@ -112,31 +100,19 @@
         "type": [ "project", "industry" ],
         "title": "Holy Potatoes! What the Hell?!",
         "subtitle": "UI & Gameplay",
-        "date": "July 2017 - Oct 2017",
+        "date": "Jul 2017 - Oct 2017",
         "imagePath": "assets/images/timeline-icons/DaylightStudios_WhatTheHell_Icon.jpg",
         "content":
         [
             
         ]
     },
-    "daylight-studios-intern":
+    "daylight-studios":
     {
         "type": [ "company" ],
         "title": "Daylight Studios",
-        "subtitle": "Programming Intern, UI & Gameplay",
-        "date": "July 2017 - Feb 2018",
-        "imagePath": "assets/images/timeline-icons/DaylightStudios_Icon.jpg",
-        "content":
-        [
-            
-        ]
-    },
-    "daylight-studios-qa":
-    {
-        "type": [ "company" ],
-        "title": "Daylight Studios",
-        "subtitle": "Game Testing Intern",
-        "date": "Mar 2017 - Apr 2017",
+        "subtitle": "Gameplay Programmer",
+        "date": "Mar 2017 - Jul 2018",
         "imagePath": "assets/images/timeline-icons/DaylightStudios_Icon.jpg",
         "content":
         [

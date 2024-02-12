@@ -47,11 +47,11 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: #808080aa;
+    background-color: #a0a0a0;
 }
 
 header nav a:active {
-    background-color: #9c9c9caa;
+    background-color: #888888;
 }
 
 .navbar-dropdown-button {
@@ -165,9 +165,48 @@ header nav a:active {
     padding-left: 24px;
 }
 
-#about-me .profile-pic-container {
+#about-me .pic-and-links {
     width: 200px;
     float: left;
+}
+
+#about-me .links-row {
+    width: fit-content;
+    margin: 12px auto;
+}
+
+#about-me .links-row .link-icon {
+    width: 28px;
+    padding: 0 12px;
+
+    filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+
+    transition-property: filter, -webkit-filter;
+    -o-transition-property: filter, -webkit-filter;
+    -moz-transition-property: filter, -webkit-filter;
+    -webkit-transition-property: filter, -webkit-filter;
+    transition-duration: 0.15s;
+}
+
+#about-me .links-row .link-icon:hover {
+    filter: none;
+    -o-filter: none;
+    -moz-filter: none;
+    -webkit-filter: none;
+}
+
+#about-me .links-row .link-icon:active {
+    filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
+
+#about-me .profile-pic-container {
+    width: 100%;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -176,13 +215,13 @@ header nav a:active {
     width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1350px) {
 
     #about-me {
         padding: 50px 10%;
     }
 
-    #about-me .profile-pic-container {
+    #about-me .pic-and-links {
         float:none;
         margin-left: auto;
         margin-right: auto;
@@ -232,8 +271,6 @@ header nav a:active {
 }
 
 #experiences {
-    /* background-image: url(assets/images/experiences_background.jpg);
-    background-size: cover; */
     background-color: #242424;
     overflow: hidden;
     padding: 50px 0;
@@ -470,73 +507,7 @@ header nav a:active {
     background-color: transparent;
 }
 
-@media screen and (max-width: 1000px) {
-    /* .timeline::before {
-        left: 20%;
-    }
-    
-    .timeline-circle {
-        margin-left: 20%;
-        transform: translate(-50%, 0);
-    }
-
-    .timeline-right {
-        left: 20%;
-    }
-
-    .timeline-left {
-
-        padding-left: 0;
-        padding-right: 0;
-        left: 20%;
-        transform: translate(0, 0);
-
-        padding-right: 0;
-        left: 50%;
-    }
-
-    .timeline-left::before {
-        left: 0;
-    }
-
-    .timeline-left .timeline-content-info {
-        float: right;
-        padding-left: 10px;
-    }
-    
-    .timeline-left .timeline-content-info h2 {
-        text-align: left;
-    }
-    
-    .timeline-left .timeline-content-info p {
-        text-align: left;
-    } */
-}
-
 /* ---- Experiences END ---- */
-
-/* ---- Project Page START ---- */
-
-#page-content {
-    padding-top: 50;
-    padding-left: 10%;
-    padding-right: 10%;
-    
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-/* ---- Project Page END ---- */
-
-/* ---- Awards START ---- */
-
-#awards-grid {
-    width: 100%;
-    table-layout: fixed;
-}
-
-/* ---- Awards END ---- */
 
 /* ---- General Formatting START ---- */
 
@@ -551,7 +522,7 @@ section {
 
 h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 36px;
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: auto;

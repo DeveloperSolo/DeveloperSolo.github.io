@@ -18,9 +18,9 @@
     </button>
 
     <nav class="navbar-full" >
-        <a href="#intro-banner">Home</a>
+        <a href="./">Home</a>
         <a href="#about-me">About Me</a>
-        <a href="#experiences">Experience</a>
+        <a href="#experiences">Experiences</a>
     </nav>
 
 </header>
@@ -36,26 +36,36 @@
 
     <section id="about-me">
         <h1>About Me</h1>
-        <div class="profile-pic-container">
-            <img class="profile-image" src="assets/images/profile_pic.JPG">
+        <h2>Game Programmer | Game Designer | Game Player</h2>
+        <div class="pic-and-links">
+            <div class="profile-pic-container">
+                <img class="profile-image" src="assets/images/profile_pic.JPG">
+            </div>
+            <div class="links-row">
+                <a href="https://random-thoughts.itch.io"><img class="link-icon" src="assets/images/link-icons/ItchIo_Icon.png"></a>
+                <a href="https://linkedin.com/in/solomontantengshue"><img class="link-icon" src="assets/images/link-icons/LinkedIn_Icon.png"></a>
+                <a href="mailto: solomon.tantengshue@gmail.com"><img class="link-icon" src="assets/images/link-icons/Email_Icon.png"></a>
+            </div>
         </div>
-        <p>Growing up, some of my most fond memories were of playing made-up roleplaying games with my classmates any chance we could get. While one of us acts as the "game master", crafting whole worlds, storylines, and game systems for our friends to enjoy, the rest acts as players, throwing out any actions we wanted and seeing how the "game master" will resolve them. Realizing that I always enjoyed being the "game master" more than a player, that was when my love for game design was awakened.
-        <br><br>Since then, I have made great strides towards improving my game design and development skills. Through my efforts both in school and in my own time, I have honed my skills in Unity, C#, and C++. It was enough to even earn some awards, like the Lee Kuan Yew Award for Mathematics and Science, and the TP-MICROSOFT Skills Mastery Award.
-        <br><br>I was also fortunate enough to work at Daylight Studios, where I had the opportunity to work directly on two commercial titles, "Holy Potatoes! What the Hell?!" and "Holy Potatoes! A Spy Story?!". Being my first real step into the games industry, it was definitely an eye opening experience, and helped me cover some gaps that my academic teachings couldn't, like managing a more long-term development cycle, and how to balance and polish games with longer play times.
-        <br><br>Currently a student at DigiPen, I am grateful to have met and worked with similarly passionate individuals that have brought me to new heights of game development. Requiring us to develop our own custom game engine, I often take on a more multifaceted role and also work concurrently on gameplay. This also allows me to working closely from the start with not only the other programmers, but with the designers and artists as well.
-        <br><br>I aim to continue working in the games industry and bring my game design and development skills to new heights!</p>
+
+        <p>
+            Hi, I’m Solomon, a UI Gameplay Programming Intern currently working on Ubisoft Singapore’s Skull & Bones. I have spent the past 8+ years studying game design and development, where I was able to earn various awards for my efforts, like the Lee Kuan Yew Award for Mathematics and Science. I also have almost 2 years of professional experience developing games. This includes shipping 2 game titles, an indie game as part of a relatively small team, and a triple-A game as part of a large, multinational corporation. In my free time, I enjoy participating in game jams, like Ludum Dare and the GMTK game jam, and my love of playing games remain strong.
+
+            <br><br>Games have helped me a lot in my life, from providing me with enjoyment and a sense of community, to imparting valuable lessons and even helping me with my studies. I believe that games have the potential to do a lot of good, and I aim to contribute to that effort, to create games that can help others as they have helped me. Programming has also become a fun and rewarding skill for me to hone, and I aim to continue growing this skill so that I can better design, implement and iterate on systems to solve problems more effectively.
+            
+            <br><br>If I sound like a good fit for your team, please contact me. I would love to have a chat on how we can potentially work together.
+                       
+        </p>
     </section>
 
     <section id="experiences">
         <h1>My Experiences</h1>
         <p class="experience-hint">Click the experiences below to find out more</p>
+
         <div class="timeline-filter">
-            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Show All</button>
-            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Projects</button>
-            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Companies</button>
-            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Schools</button>
-            <!-- <button class="timeline-filter-button" onclick="FilterOnClick(this)">Industry</button>
-            <button class="timeline-filter-button" onclick="FilterOnClick(this)">Academic</button> -->
+            <template id="timeline-filter-button-template">
+                <button class="timeline-filter-button" onclick="FilterOnClick(this)"></button>
+            </template>
         </div>
 
         <div class="timeline">
@@ -72,7 +82,7 @@
                         </div>
 
                         <img src="assets/images/timeline-icons/Ubisoft_Singapore_Icon.jpg">
-                        <!-- <a href="project-page.html"></a> -->
+                        <!-- <a class="timeline-subpage-link" draggable="false"></a> -->
                     </div>
                 </div>
             </template>
@@ -83,10 +93,6 @@
     </section>
 
 </article>
-
-<footer>
-
-</footer>
 
 </body>
 </html>
