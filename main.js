@@ -231,12 +231,16 @@ window.onresize = function()
 {
     if(window.innerWidth >= 1000)
     {
-        ResetNavbarButton();
         SetUseExperienceAlignment(true);
     }
     else
     {
         SetUseExperienceAlignment(false);
+    }
+
+    if(window.innerWidth >= 800)
+    {
+        ResetNavbarButton();
     }
 }
 

@@ -157,6 +157,7 @@ header nav a:active {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    contain: layout;
 }
 
 #about-me p {
