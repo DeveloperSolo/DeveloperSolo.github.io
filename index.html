@@ -1,98 +1,32 @@
-<html lang="en">
+<html lang = "en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
     <title>Solomon Tan - Portfolio</title>
 </head>
 <body>
+    
+    <article>
 
-<header>
-    <p>Solomon's Portfolio</p>
-
-    <button class="navbar-dropdown-button" onclick="OnNavbarButtonClicked()">
-        <div class="navbar-dropdown-button-bar1"></div>
-        <div class="navbar-dropdown-button-bar2"></div>
-        <div class="navbar-dropdown-button-bar3"></div>
-    </button>
-
-    <nav class="navbar-full" >
-        <a href="./">Home</a>
-        <a href="#about-me">About Me</a>
-        <a href="#experiences">Experiences</a>
-    </nav>
-
-</header>
-
-<article>
-
-    <section id="intro-banner">
-        <div id="intro-banner-info">
-            <h1>Solomon Tan Teng Shue</h1>
-            <p> Aiming to improve the world, one game at a time </p>
-        </div>
-    </section>
-
-    <section id="about-me">
-        <h1>About Me</h1>
-        <h2>Game Programmer | Game Designer | Game Player</h2>
-        <div class="pic-and-links">
-            <div class="profile-pic-container">
-                <img class="profile-image" src="assets/images/profile_pic.JPG">
+        <section id="intro">
+            <div id="intro-content">
+                <h1 class="azeret-mono-bold white-text-drop-shadow">Solomon Tan</h1>
+                <p class="azeret-mono-default white-text-drop-shadow">Aiming to Improve the World, 1 Game at a Time</p>
             </div>
-            <div class="links-row">
-                <a href="https://random-thoughts.itch.io"><img class="link-icon" src="assets/images/link-icons/ItchIo_Icon.png"></a>
-                <a href="https://linkedin.com/in/solomontantengshue"><img class="link-icon" src="assets/images/link-icons/LinkedIn_Icon.png"></a>
-                <a href="mailto: solomon.tantengshue@gmail.com"><img class="link-icon" src="assets/images/link-icons/Email_Icon.png"></a>
-            </div>
-        </div>
+        </section>
 
-        <p>
-            Hi, I’m Solomon, a UI Gameplay Programming Intern currently working on Ubisoft Singapore’s Skull & Bones. I have spent the past 8+ years studying game design and development, where I was able to earn various awards for my efforts, like the Lee Kuan Yew Award for Mathematics and Science. I also have almost 2 years of professional experience developing games. This includes shipping 2 game titles, an indie game as part of a relatively small team, and a triple-A game as part of a large, multinational corporation. In my free time, I enjoy participating in game jams, like Ludum Dare and the GMTK game jam, and my love of playing games remain strong.
+        <section id="about-me">
 
-            <br><br>Games have helped me a lot in my life, from providing me with enjoyment and a sense of community, to imparting valuable lessons and even helping me with my studies. I believe that games have the potential to do a lot of good, and I aim to contribute to that effort, to create games that can help others as they have helped me. Programming has also become a fun and rewarding skill for me to hone, and I aim to continue growing this skill so that I can better design, implement and iterate on systems to solve problems more effectively.
-            
-            <br><br>If I sound like a good fit for your team, please contact me. I would love to have a chat on how we can potentially work together.
-                       
-        </p>
-    </section>
+        </section>
 
-    <section id="experiences">
-        <h1>My Experiences</h1>
-        <p class="experience-hint">Click the experiences below to find out more</p>
-
-        <div class="timeline-filter">
-            <template id="timeline-filter-button-template">
-                <button class="timeline-filter-button" onclick="FilterOnClick(this)"></button>
-            </template>
-        </div>
-
-        <div class="timeline">
-            <div class="timeline-circle"></div>
-
-            <template id="timeline-element-template">
-                <div class="timeline-container">
-                    <div class="timeline-content">
-
-                        <div class="timeline-content-info">
-                            <p class="timeline-date">Aug 2023 - now</p>
-                            <h2 class="timeline-title">Ubisoft Singapore</h2>
-                            <p class="timeline-subtitle">UI Gameplay Programmer</p>
-                        </div>
-
-                        <img src="assets/images/timeline-icons/Ubisoft_Singapore_Icon.jpg">
-                        <!-- <a class="timeline-subpage-link" draggable="false"></a> -->
-                    </div>
-                </div>
-            </template>
-
-            <div class="timeline-circle"></div>
-
-        </div>
-    </section>
-
-</article>
+    </article>
 
 </body>
 </html>
