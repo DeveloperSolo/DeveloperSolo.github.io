@@ -31,6 +31,16 @@
     transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 1000px) {
+    #intro h1 {
+        font-size: 9.34vw;
+    }
+    
+    #intro p {
+        font-size: 2.70vw;
+    }
+}
+
 /* ---- Intro END ---- */
 
 /* ---- About Me START ---- */
